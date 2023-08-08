@@ -1,0 +1,145 @@
+@import '../mixins/mixins';
+@import '../variables/variable';
+
+/*=========================================================
+                    Banner css Start
+=========================================================*/
+#banner {
+    padding: 70px 0 100px;
+    // clip-path: polygon(0 49%, 0 21%, 0 0, 100% 0, 100% 16%, 100% 36%, 100% 100%, 84% 93%, 67% 100%, 51% 100%, 25% 89%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 51% 100%, 0 100%);
+    background: #fff;
+    z-index: 1;
+    position: relative;
+
+    .background-woman {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+    .banner_heading {
+        width: 100%;
+
+        h1 {
+            background-image: url(../../images/text-background.jpg);
+            background-repeat: repeat;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 100px;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-weight: 700;
+            -webkit-font-smoothing: antialiased;
+        }
+    }
+
+    .banner_text {
+        margin-top: 50px;
+
+        .banner_left {
+            h5 {
+                @include fs(#212529, 23px, 600);
+                line-height: 32px;
+
+                span {
+                    font-weight: 700;
+                    position: relative;
+
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        bottom: 7px;
+                        left: 0;
+                        width: 100%;
+                        height: 5px;
+                        background: rgba(240, 76, 35, 0.2);
+                    }
+                }
+            }
+
+            p {
+                @include fs(#777, 15px, 400);
+                line-height: 26px;
+                margin-top: 15px;
+            }
+
+            a {
+                @include fs($c1, 14px, 300);
+                margin-top: 20px;
+                position: relative;
+                padding-left: 30px;
+
+                i {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+
+    .banner_right_cont {
+        position: absolute;
+        bottom: -140px;
+        right: 100px;
+        z-index: 9;
+        width: 50%;
+
+        .banner_right_slider_item {
+            padding: 50px 20px;
+            width: 310px;
+            background: #fff;
+            text-align: center;
+            box-shadow: 0 0 5px 5px rgba(241, 241, 241, 0.5);
+            z-index: 9;
+
+            img {
+                max-width: 100px;
+                margin-bottom: 20px;
+            }
+
+            h6 {
+                @include fs(#212529, 21px, 600);
+                margin-bottom: 10px;
+            }
+
+            p {
+                @include fs(#777, 14px, 400);
+                line-height: 26px;
+                margin-bottom: 15px;
+            }
+
+            a {
+                @include fs($c1, 14px, 500);
+                position: relative;
+                padding-right: 20px;
+
+                i {
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+                    transition: all linear .3s;
+                }
+
+                &:hover {
+                    i {
+                        right: -10px;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+/*=========================================================
+                    Banner css end
+=========================================================*/

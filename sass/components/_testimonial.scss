@@ -1,0 +1,76 @@
+@import '../mixins/mixins';
+@import '../variables/variable';
+
+/*=========================================================
+                  Testimonial css Start
+=========================================================*/
+#testimonial{
+    padding: 100px 0;
+    overflow: hidden !important;
+
+    .testimonial_row{
+        margin-top: 50px;
+
+        .slick-dots{
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            display: flex !important;
+            justify-content: center;
+            li{
+                text-align: center;
+                margin: 0 8px;
+                button{
+                    font-size: 0;
+                    border: none;
+                    width: 8px;
+                    height: 8px;
+                    background: #989898;
+                    border-radius: 50%;
+                }
+            }
+            .slick-active{
+                button{
+                    width: 20px;
+                    border-radius: 5px;
+                    background: #5E5151;
+                }
+            }
+        }
+
+        .testimonial_item{
+            width: 90%;
+            padding: 50px;
+            background: #fff;
+            text-align: center;
+            box-shadow: 0 0 5px 0px #dad6d6;
+            margin: 0 auto;
+
+            img{
+                margin-bottom: 50px;
+                max-width: 50px;
+                margin: 0 auto;
+            }
+            p{
+                @include fs($b,17px,400);
+                line-height: 30px;
+                max-width: 65%;
+                margin: 0 auto;
+            }
+            .author{
+                margin-top: 20px;
+                h3{
+                    @include fs(#111,23px,700);
+                }
+                p{
+                    @include fs($b,14px,400);
+                }
+            }
+        }
+    }
+}
+/*=========================================================
+                  Testimonial css end
+=========================================================*/
