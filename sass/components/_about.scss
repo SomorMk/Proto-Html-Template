@@ -1,0 +1,67 @@
+@import '../mixins/mixins';
+@import '../variables/variable';
+
+/*=========================================================
+                    About css Start
+=========================================================*/
+#about{
+    padding: 100px 0 100px;
+
+    .about_left{
+        img{
+            width: 100%;
+            max-width: 100%;
+        }
+
+        ul{
+            li{
+                width: 100%;
+                img{
+                    width: 100%;
+                    max-width: 100%;
+                }
+                &:last-child{
+                    margin-top: 24px;
+                }
+            }
+        }
+    }
+
+    .about_right{
+        padding-left: 20px;
+
+        .com_btn{
+            margin-top: 30px;
+        }
+
+        .about_right_bottom{
+            margin-top: 30px;
+            .clients{
+                position: relative;
+                padding-left: 70px;
+                img{
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                }
+                h3{
+                    @include fs($b,14px,700);
+                    span{
+                        display: block;
+                        @include fs($b,35px,700);
+                    }
+                }
+            }
+            p{
+                @include fs(#777777,14px,400);
+                line-height: 26px;
+                border-left: 10px solid #F3F3F3;
+                padding-left: 20px;
+            }
+        }
+    }
+}
+/*=========================================================
+                    About css end
+=========================================================*/

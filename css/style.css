@@ -1,0 +1,1078 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+.com_btn {
+  padding: 10px 20px;
+  background: #F04C23;
+  color: #fff;
+  margin-right: 30px;
+  box-shadow: 5px 5px 0 rgba(240, 76, 35, 0.7);
+  transition: all linear 0.3s;
+}
+.com_btn:hover {
+  box-shadow: 0 0 0 0;
+}
+
+.com_sub_title {
+  color: #F04C23;
+  font-size: 16.8px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  display: inline-block;
+  position: relative;
+}
+.com_sub_title::after {
+  position: absolute;
+  content: "";
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: rgba(240, 76, 35, 0.3);
+  animation: after 2s infinite;
+}
+@keyframes after {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.com_title {
+  color: #212529;
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 45.5px;
+}
+
+.com_pera {
+  color: #777777;
+  font-size: 15.5px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+/*=========================================================
+                    Common css end
+=========================================================*/
+/*=========================================================
+                    Header css Start
+=========================================================*/
+/*=========================================================
+                    Header css end
+=========================================================*/
+/*=========================================================
+                    Menu css Start
+=========================================================*/
+.navbar {
+  padding: 30px 0;
+  background: #fff !important;
+}
+.navbar #navbarSupportedContent .navbar-nav .nav-item {
+  margin-left: 20px;
+}
+.navbar #navbarSupportedContent .navbar-nav .nav-item .nav-link {
+  color: #212529;
+  font-size: 16px;
+  font-weight: 500;
+}
+.navbar #navbarSupportedContent .navbar-nav .nav-item .nav-link.active {
+  color: #F04C23;
+}
+.navbar #navbarSupportedContent .navbar-nav .nav-item:last-child .nav-link {
+  padding: 10px 20px;
+  background: #212529;
+  color: #fff;
+  box-shadow: 5px 5px 0 #F04C23;
+  transition: all linear 0.3s;
+}
+.navbar #navbarSupportedContent .navbar-nav .nav-item:last-child .nav-link:hover {
+  box-shadow: 0 0 0 0;
+}
+
+/*=========================================================
+                    Menu css end
+=========================================================*/
+/*=========================================================
+                    Banner css Start
+=========================================================*/
+#banner {
+  padding: 70px 0 100px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 51% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 51% 100%, 0 100%);
+  background: #fff;
+  z-index: 1;
+  position: relative;
+}
+#banner .background-woman {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+#banner .banner_heading {
+  width: 100%;
+}
+#banner .banner_heading h1 {
+  background-image: url(../../images/text-background.jpg);
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 100px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+}
+#banner .banner_text {
+  margin-top: 50px;
+}
+#banner .banner_text .banner_left h5 {
+  color: #212529;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 32px;
+}
+#banner .banner_text .banner_left h5 span {
+  font-weight: 700;
+  position: relative;
+}
+#banner .banner_text .banner_left h5 span::after {
+  position: absolute;
+  content: "";
+  bottom: 7px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: rgba(240, 76, 35, 0.2);
+}
+#banner .banner_text .banner_left p {
+  color: #777;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 15px;
+}
+#banner .banner_text .banner_left a {
+  color: #F04C23;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 20px;
+  position: relative;
+  padding-left: 30px;
+}
+#banner .banner_text .banner_left a i {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+#banner .banner_right_cont {
+  position: absolute;
+  bottom: -140px;
+  right: 100px;
+  z-index: 9;
+  width: 50%;
+}
+#banner .banner_right_cont .banner_right_slider_item {
+  padding: 50px 20px;
+  width: 310px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 0 5px 5px rgba(241, 241, 241, 0.5);
+  z-index: 9;
+}
+#banner .banner_right_cont .banner_right_slider_item img {
+  max-width: 100px;
+  margin-bottom: 20px;
+}
+#banner .banner_right_cont .banner_right_slider_item h6 {
+  color: #212529;
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+#banner .banner_right_cont .banner_right_slider_item p {
+  color: #777;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+#banner .banner_right_cont .banner_right_slider_item a {
+  color: #F04C23;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  padding-right: 20px;
+}
+#banner .banner_right_cont .banner_right_slider_item a i {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  transition: all linear 0.3s;
+}
+#banner .banner_right_cont .banner_right_slider_item a:hover i {
+  right: -10px;
+}
+
+/*=========================================================
+                    Banner css end
+=========================================================*/
+/*=========================================================
+                    About css Start
+=========================================================*/
+#about {
+  padding: 100px 0 100px;
+}
+#about .about_left img {
+  width: 100%;
+  max-width: 100%;
+}
+#about .about_left ul li {
+  width: 100%;
+}
+#about .about_left ul li img {
+  width: 100%;
+  max-width: 100%;
+}
+#about .about_left ul li:last-child {
+  margin-top: 24px;
+}
+#about .about_right {
+  padding-left: 20px;
+}
+#about .about_right .com_btn {
+  margin-top: 30px;
+}
+#about .about_right .about_right_bottom {
+  margin-top: 30px;
+}
+#about .about_right .about_right_bottom .clients {
+  position: relative;
+  padding-left: 70px;
+}
+#about .about_right .about_right_bottom .clients img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+#about .about_right .about_right_bottom .clients h3 {
+  color: #212529;
+  font-size: 14px;
+  font-weight: 700;
+}
+#about .about_right .about_right_bottom .clients h3 span {
+  display: block;
+  color: #212529;
+  font-size: 35px;
+  font-weight: 700;
+}
+#about .about_right .about_right_bottom p {
+  color: #777777;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  border-left: 10px solid #F3F3F3;
+  padding-left: 20px;
+}
+
+/*=========================================================
+                    About css end
+=========================================================*/
+/*=========================================================
+                  Client Slider css Start
+=========================================================*/
+#client .cliant_slider {
+  display: flex;
+  flex-wrap: wrap;
+}
+#client .cliant_slider li {
+  width: 20%;
+  text-align: center;
+}
+#client .cliant_slider li img {
+  max-width: 100px;
+  text-align: center;
+  margin: 0 auto !important;
+}
+#client .cliant_slider .slick-dots {
+  display: flex !important;
+  margin: 0 auto;
+  margin-top: 20px;
+  z-index: 2;
+}
+#client .cliant_slider .slick-dots li {
+  margin: 0 8px;
+}
+#client .cliant_slider .slick-dots li button {
+  font-size: 0;
+  border: none;
+  width: 8px;
+  height: 8px;
+  background: #989898;
+  border-radius: 50%;
+}
+#client .cliant_slider .slick-dots .slick-active button {
+  width: 20px;
+  border-radius: 5px;
+  background: #5E5151;
+}
+
+/*=========================================================
+                  Client Slider css end
+=========================================================*/
+/*=========================================================
+                    Service css Start
+=========================================================*/
+#service {
+  padding: 100px 0;
+  background: #EDEDED;
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+}
+#service .service_row {
+  margin-top: 50px;
+}
+#service .service_row .service_item {
+  margin-bottom: 24px;
+}
+#service .service_row .service_item:hover .image img {
+  transform: scale(1.04);
+}
+#service .service_row .service_item:hover .text img {
+  right: 15px;
+}
+#service .service_row .service_item .image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+#service .service_row .service_item .image::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+#service .service_row .service_item .image img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  transition: all linear 0.3s;
+}
+#service .service_row .service_item .image h5 {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  z-index: 1;
+}
+#service .service_row .service_item .text {
+  width: 100%;
+  padding: 40px 90px 40px 25px;
+  background: #fff;
+  position: relative;
+}
+#service .service_row .service_item .text p {
+  color: #777;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+#service .service_row .service_item .text img {
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  transition: all linear 0.3s;
+}
+
+/*=========================================================
+                    Service css end
+=========================================================*/
+/*=========================================================
+                    Benifits css Start
+=========================================================*/
+#benifits {
+  padding: 100px 0;
+  background: linear-gradient(to right, #E25F3E 40%, #212529 40%);
+  position: relative;
+}
+@keyframes lr {
+  0% {
+    left: 5%;
+  }
+  50% {
+    left: 10%;
+  }
+  100% {
+    left: 5%;
+  }
+}
+#benifits .benifit_left {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  animation: lr 5s infinite;
+}
+#benifits .benifit_left h2 {
+  background-image: url(../../images/text-background-2.jpg);
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  font-size: 110px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#benifits .benifit_right h6 {
+  color: #F04C23;
+  font-size: 17px;
+  font-weight: 500;
+  position: relative;
+  display: inline;
+}
+#benifits .benifit_right h6::after {
+  position: absolute;
+  content: "";
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: rgba(226, 95, 62, 0.4);
+}
+#benifits .benifit_right h3 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 46px;
+  margin-top: 10px;
+}
+#benifits .benifit_right p {
+  color: #777;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 30px;
+}
+#benifits .benifit_right ul {
+  margin-top: 40px;
+}
+#benifits .benifit_right ul li {
+  color: #777;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  padding-left: 70px;
+  margin-bottom: 15px;
+  position: relative;
+}
+#benifits .benifit_right ul li i {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+  background: #777;
+  border-radius: 50%;
+}
+
+/*=========================================================
+                    Benifits css end
+=========================================================*/
+/*=========================================================
+                    Skill css Start
+=========================================================*/
+#skill {
+  padding: 100px 0;
+}
+#skill .skill_left h2 {
+  color: #212529;
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+#skill .skill_left p {
+  color: #777;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+#skill .skill_left ul li {
+  color: #212529;
+  font-size: 12px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #F7F7F7;
+}
+#skill .skill_left ul li span {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#skill .skill_left ul li::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 15px;
+  width: 100%;
+  height: 5px;
+  background: #ecebeb;
+}
+#skill .skill_left ul li::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 15px;
+  height: 5px;
+  background: #F04C23;
+  z-index: 1;
+}
+#skill .skill_left ul li:first-child::before {
+  width: 90%;
+}
+#skill .skill_left ul li:nth-child(2)::before {
+  width: 80%;
+}
+#skill .skill_left ul li:nth-child(3)::before {
+  width: 50%;
+}
+#skill .skill_right {
+  padding-top: 80px;
+}
+#skill .skill_right img {
+  width: 100%;
+  max-width: 100%;
+}
+
+/*=========================================================
+                    Skill css end
+=========================================================*/
+/*=========================================================
+                    Team css Start
+=========================================================*/
+#team {
+  padding: 100px 0 100px;
+  background: #EDEDED;
+}
+#team .team_row {
+  margin-top: 50px;
+  position: relative;
+}
+#team .team_row .team_item {
+  width: 20%;
+  margin: 0 12px;
+}
+#team .team_row .team_item a .image img {
+  width: 100%;
+  max-width: 100%;
+}
+#team .team_row .team_item a .text {
+  padding: 40px 30px;
+  background: #fff;
+}
+#team .team_row .team_item a .text h5 {
+  color: #000;
+  font-size: 25px;
+  font-weight: 600;
+}
+#team .team_row .team_item a .text p {
+  color: #777;
+  font-size: 15px;
+  font-weight: 400;
+}
+#team .team_row .slick-dots {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex !important;
+}
+#team .team_row .slick-dots li {
+  margin: 0 8px;
+}
+#team .team_row .slick-dots li button {
+  font-size: 0;
+  border: none;
+  width: 8px;
+  height: 8px;
+  background: #989898;
+  border-radius: 50%;
+}
+#team .team_row .slick-dots .slick-active button {
+  width: 20px;
+  border-radius: 5px;
+  background: #5E5151;
+}
+
+/*=========================================================
+                    Team css end
+=========================================================*/
+/*=========================================================
+                    Contact css Start
+=========================================================*/
+#contact {
+  padding: 100px 0;
+  background: linear-gradient(to right, #212529 70%, #e25f3e 40%);
+  position: relative;
+}
+#contact .contact_left h6 {
+  color: #F04C23;
+  font-size: 17px;
+  font-weight: 500;
+  position: relative;
+  display: inline;
+}
+#contact .contact_left h6::after {
+  position: absolute;
+  content: "";
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: rgba(240, 76, 35, 0.4);
+}
+#contact .contact_left h2 {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+#contact .contact_left p {
+  color: #777;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 30px;
+}
+#contact .contact_left .input_area {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#contact .contact_left .input_area input {
+  width: 100%;
+  border: none;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  border-bottom: 1px solid #777;
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+#contact .contact_left .input_area textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  border-bottom: 1px solid #777;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+#contact .contact_left .com_btn {
+  margin-top: 30px;
+}
+#contact .contact_right {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  animation: tb 10s infinite;
+}
+#contact .contact_right h2 {
+  background-image: url(../../images/text-background.jpg);
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+}
+@keyframes tb {
+  0% {
+    right: 2%;
+  }
+  25% {
+    right: 5%;
+  }
+  50% {
+    right: 8%;
+  }
+  100% {
+    right: 2%;
+  }
+}
+
+/*=========================================================
+                    Contact css end
+=========================================================*/
+/*=========================================================
+                  Testimonial css Start
+=========================================================*/
+#testimonial {
+  padding: 100px 0;
+  overflow: hidden !important;
+}
+#testimonial .testimonial_row {
+  margin-top: 50px;
+}
+#testimonial .testimonial_row .slick-dots {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex !important;
+  justify-content: center;
+}
+#testimonial .testimonial_row .slick-dots li {
+  text-align: center;
+  margin: 0 8px;
+}
+#testimonial .testimonial_row .slick-dots li button {
+  font-size: 0;
+  border: none;
+  width: 8px;
+  height: 8px;
+  background: #989898;
+  border-radius: 50%;
+}
+#testimonial .testimonial_row .slick-dots .slick-active button {
+  width: 20px;
+  border-radius: 5px;
+  background: #5E5151;
+}
+#testimonial .testimonial_row .testimonial_item {
+  width: 90%;
+  padding: 50px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 0 5px 0px #dad6d6;
+  margin: 0 auto;
+}
+#testimonial .testimonial_row .testimonial_item img {
+  margin-bottom: 50px;
+  max-width: 50px;
+  margin: 0 auto;
+}
+#testimonial .testimonial_row .testimonial_item p {
+  color: #212529;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+  max-width: 65%;
+  margin: 0 auto;
+}
+#testimonial .testimonial_row .testimonial_item .author {
+  margin-top: 20px;
+}
+#testimonial .testimonial_row .testimonial_item .author h3 {
+  color: #111;
+  font-size: 23px;
+  font-weight: 700;
+}
+#testimonial .testimonial_row .testimonial_item .author p {
+  color: #212529;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/*=========================================================
+                  Testimonial css end
+=========================================================*/
+/*=========================================================
+                    Blog css Start
+=========================================================*/
+#blog {
+  padding: 100px 0;
+}
+#blog .blog_row {
+  margin-top: 50px;
+}
+#blog .blog_row .blog_item {
+  box-shadow: 0 0 10px 2px #e4e1e1;
+}
+#blog .blog_row .blog_item:hover .image img {
+  filter: grayscale(100);
+}
+#blog .blog_row .blog_item:hover .image .date {
+  right: 17px;
+  bottom: 17px;
+  filter: grayscale(0);
+}
+#blog .blog_row .blog_item:hover .image .date:after {
+  left: 0px;
+  top: 0px;
+}
+#blog .blog_row .blog_item:hover .text p img {
+  right: -65px;
+}
+#blog .blog_row .blog_item .image {
+  height: 185px;
+  position: relative;
+}
+#blog .blog_row .blog_item .image img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  transition: all linear 0.3s;
+}
+#blog .blog_row .blog_item .image .date {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 70px;
+  height: 60px;
+  background: #F04C23;
+  z-index: 1;
+  transition: all linear 0.3s;
+}
+#blog .blog_row .blog_item .image .date p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 0;
+}
+#blog .blog_row .blog_item .image .date p span {
+  display: block;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 43px;
+}
+#blog .blog_row .blog_item .image .date::after {
+  position: absolute;
+  content: "";
+  width: 70px;
+  height: 60px;
+  left: 6px;
+  top: 6px;
+  background: rgba(240, 76, 35, 0.7);
+  z-index: -1;
+  transition: all linear 0.3s;
+}
+#blog .blog_row .blog_item .text {
+  padding: 35px 30px;
+  background: #fff;
+}
+#blog .blog_row .blog_item .text h6 {
+  color: #969696;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+#blog .blog_row .blog_item .text h2 {
+  color: #212529;
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  transition: all linear 0.3s;
+}
+#blog .blog_row .blog_item .text h2:hover {
+  color: #F04C23;
+}
+#blog .blog_row .blog_item .text p {
+  color: #F04C23;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline;
+  position: relative;
+}
+#blog .blog_row .blog_item .text p img {
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  transform: translateY(-50%);
+  max-width: 35px;
+  transition: all linear 0.3s;
+}
+
+/*=========================================================
+                    Blog css end
+=========================================================*/
+/*=========================================================
+                    Footer css Start
+=========================================================*/
+#footer {
+  padding: 80px 0 40px;
+}
+#footer .footer_top {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #777;
+}
+#footer .footer_top h2 {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+#footer .footer_bottom {
+  margin-top: 60px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #777;
+}
+#footer .footer_bottom .logo a img {
+  max-width: 100%;
+}
+#footer .footer_bottom .logo p {
+  color: #999999;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: 20px;
+}
+#footer .footer_bottom .logo ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+#footer .footer_bottom .logo ul li {
+  margin-right: 10px;
+}
+#footer .footer_bottom .logo ul li a:hover i {
+  background: #F04C23;
+  border-color: #F04C23;
+}
+#footer .footer_bottom .logo ul li a i {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  border: 1px solid #999;
+  border-radius: 50%;
+  transition: all linear 0.2s;
+}
+#footer .footer_bottom .contact ul {
+  padding-top: 30px;
+}
+#footer .footer_bottom .contact ul li {
+  margin-bottom: 20px;
+  padding-left: 40px;
+  position: relative;
+}
+#footer .footer_bottom .contact ul li i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  font-size: 20px;
+}
+#footer .footer_bottom .contact ul li a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all linear 0.3s;
+}
+#footer .footer_bottom .contact ul li a:hover {
+  color: #F04C23;
+}
+#footer .footer_bottom .map iframe {
+  width: 100%;
+  max-width: 100%;
+}
+#footer .footer_bottom .link h4 {
+  color: #fff;
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#footer .footer_bottom .link ul li {
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 5px;
+}
+#footer .footer_bottom .link ul li i {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #ccc;
+  font-size: 10px;
+}
+#footer .footer_bottom .link ul li a {
+  color: #ccc;
+  font-size: 13px;
+  font-weight: 400;
+  transition: all linear 0.2s;
+}
+#footer .footer_bottom .link ul li a:hover {
+  color: #F04C23;
+  font-size: 14px;
+  padding-left: 10px;
+}
+#footer .footer_copyright {
+  margin-top: 30px;
+  text-align: center;
+}
+#footer .footer_copyright p {
+  color: #999;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/*=========================================================
+                    Footer css end
+=========================================================*//*# sourceMappingURL=style.css.map */

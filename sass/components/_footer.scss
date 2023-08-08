@@ -1,0 +1,131 @@
+@import '../mixins/mixins';
+@import '../variables/variable';
+
+/*=========================================================
+                    Footer css Start
+=========================================================*/
+#footer{
+    padding: 80px 0 40px;
+
+    .footer_top{
+        padding-bottom: 40px;
+        border-bottom: 1px solid #777;
+        h2{
+            @include fs(#fff,35px,600);
+        }
+    }
+    .footer_bottom{
+        margin-top: 60px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #777;
+        .logo{
+            a{
+                img{
+                    max-width: 100%;
+                }
+            }
+            p{
+                @include fs(#999999,14px,400);
+                line-height: 28px;
+                margin-top: 20px;
+            }
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 30px;
+                li{
+                    margin-right: 10px;
+                    a{
+                        &:hover{
+                            i{
+                                background: $c1;
+                                border-color: $c1;
+                            }
+                        }
+                        i{
+                            width: 35px;
+                            height: 35px;
+                            line-height: 35px;
+                            text-align: center;
+                            color: #fff;
+                            font-size: 15px;
+                            border: 1px solid #999;
+                            border-radius: 50%;
+                            transition: all linear .2s;
+                        }
+                    }
+                }
+            }
+        }
+        .contact{
+            ul{
+                padding-top: 30px;
+                li{
+                    margin-bottom: 20px;
+                    padding-left: 40px;
+                    position: relative;
+                    i{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        color: #fff;
+                        font-size: 20px;
+                    }
+                    a{
+                        @include fs(#fff,14px,600);
+                        transition: all linear .3s;
+                        &:hover{
+                            color: $c1;
+                        }
+                    }
+                }
+            }
+        }
+        .map{
+            iframe{
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+        .link{
+            h4{
+                @include fs(#fff,19px,700);
+                margin-bottom: 20px;
+            }
+            ul{
+                li{
+                    padding-left: 20px;
+                    position: relative;
+                    margin-bottom: 5px;
+                    i{
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        color: #ccc;
+                        font-size: 10px;
+                    }
+                    a{
+                        @include fs(#ccc,13px,400);
+                        transition: all linear .2s;
+                        &:hover{
+                            color: $c1;
+                            font-size: 14px;
+                            padding-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer_copyright{
+        margin-top: 30px;
+        text-align: center;
+        p{
+            @include fs(#999,14px,400);
+        }
+    }
+}
+/*=========================================================
+                    Footer css end
+=========================================================*/

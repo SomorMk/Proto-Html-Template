@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+.com_btn {
+    padding: 10px 20px;
+    background: #F04C23;
+    color: #fff;
+    margin-right: 30px;
+    box-shadow: 5px 5px 0 rgba(240, 76, 35, 0.7);
+    transition: all linear .3s;
+
+    &:hover {
+        box-shadow: 0 0 0 0;
+    }
+}
+
+.com_sub_title {
+    color: #F04C23;
+    font-size: 16.8px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    display: inline-block;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        bottom: 5px;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: rgba(240, 76, 35, 0.3);
+        animation: after 2s infinite;
+    }
+    @keyframes after {
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+}
+
+.com_title {
+    color: #212529;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 45.5px;
+}
+
+.com_pera {
+    color: #777777;
+    font-size: 15.5px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+/*=========================================================
+                    Common css end
+=========================================================*/
