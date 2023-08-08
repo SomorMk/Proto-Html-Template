@@ -1,0 +1,77 @@
+@import '../mixins/mixins';
+@import '../variables/variable';
+
+/*=========================================================
+                    Skill css Start
+=========================================================*/
+#skill{
+    padding: 100px 0;
+
+    .skill_left{
+        h2{
+            @include fs($b,35px,600);
+            margin-bottom: 20px;
+        }
+        p{
+            @include fs(#777,16px,400);
+            margin-bottom: 40px;
+        }
+        ul{
+            li{
+                @include fs($b,12px,600);
+                position: relative;
+                padding-bottom: 30px;
+                margin-bottom: 15px;
+                border-bottom: 1px solid #F7F7F7;
+                span{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+                &::after{
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    bottom: 15px;
+                    width: 100%;
+                    height: 5px;
+                    background: #ecebeb;
+                }
+                &::before{
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    bottom: 15px;
+                    height: 5px;
+                    background: $c1;
+                    z-index: 1;
+                }
+                &:first-child{
+                    &::before{
+                        width: 90%;
+                    }
+                }
+                &:nth-child(2){
+                    &::before{
+                        width: 80%;
+                    }
+                }
+                &:nth-child(3){
+                    &::before{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+    .skill_right{
+        padding-top: 80px;
+        img{
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}
+/*=========================================================
+                    Skill css end
+=========================================================*/

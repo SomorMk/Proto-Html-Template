@@ -1,0 +1,65 @@
+@import '../mixins/mixins';
+@import '../variables/variable';
+
+/*=========================================================
+                    Team css Start
+=========================================================*/
+#team{
+    padding: 100px 0 100px;
+    background: #EDEDED;
+
+    .team_row{
+        margin-top: 50px;
+        position: relative;
+        .team_item{
+            width: 20%;
+            margin: 0 12px;
+            a{
+                .image{
+                    img{
+                        width: 100%;
+                        max-width: 100%;
+                    }
+                }
+                .text{
+                    padding: 40px 30px;
+                    background: #fff;
+                    h5{
+                        @include fs(#000,25px,600);
+                    }
+                    p{
+                        @include fs(#777,15px,400);
+                    }
+                }
+            }
+        }
+        .slick-dots{
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex !important;
+            li{
+                margin: 0 8px;
+                button{
+                    font-size: 0;
+                    border: none;
+                    width: 8px;
+                    height: 8px;
+                    background: #989898;
+                    border-radius: 50%;
+                }
+            }
+            .slick-active{
+                button{
+                    width: 20px;
+                    border-radius: 5px;
+                    background: #5E5151;
+                }
+            }
+        }
+    }
+}
+/*=========================================================
+                    Team css end
+=========================================================*/

@@ -1,0 +1,49 @@
+@import '../mixins/mixins';
+@import '../variables/variable';
+
+/*=========================================================
+                  Client Slider css Start
+=========================================================*/
+#client{
+    .cliant_slider{
+        display: flex;
+        flex-wrap: wrap;
+        li{
+            width: 20%;
+            text-align: center;
+            img{
+                max-width: 100px;
+                text-align: center;
+                margin: 0 auto !important;
+            }
+        }
+
+        .slick-dots{
+            display: flex !important;
+            margin: 0 auto;
+            margin-top: 20px;
+            z-index: 2;
+            li{
+                margin: 0 8px;
+                button{
+                    font-size: 0;
+                    border: none;
+                    width: 8px;
+                    height: 8px;
+                    background: #989898;
+                    border-radius: 50%;
+                }
+            }
+            .slick-active{
+                button{
+                    width: 20px;
+                    border-radius: 5px;
+                    background: #5E5151;
+                }
+            }
+        }
+    }
+}
+/*=========================================================
+                  Client Slider css end
+=========================================================*/

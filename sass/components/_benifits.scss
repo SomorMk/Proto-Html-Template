@@ -1,0 +1,93 @@
+@import '../mixins/mixins';
+@import '../variables/variable';
+
+/*=========================================================
+                    Benifits css Start
+=========================================================*/
+#benifits{
+    padding: 100px 0;
+    background: linear-gradient(to right, #E25F3E 40%, #212529 40%);
+    position: relative;
+
+    @keyframes lr {
+        0%{
+            left: 5%;
+        }
+        50%{
+            left: 10%;
+        }
+        100%{
+            left: 5%;
+        }
+    }
+
+    .benifit_left{
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+        animation: lr 5s infinite;
+        h2{
+            background-image: url(../../images/text-background-2.jpg);
+            background-repeat: repeat;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-font-smoothing: antialiased;
+            font-size: 110px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+    .benifit_right{
+        h6{
+            @include fs($c1,17px,500);
+            position: relative;
+            display: inline;
+            &::after{
+                position: absolute;
+                content: '';
+                bottom: 5px;
+                left: 0;
+                width: 100%;
+                height: 5px;
+                background: rgba(226, 95, 62, 0.4);
+            }
+        }
+        h3{
+            @include fs(#fff,36px,600);
+            line-height: 46px;
+            margin-top: 10px;
+        }
+        p{
+            @include fs(#777,16px,400);
+            line-height: 26px;
+            margin-top: 30px;
+        }
+        ul{
+            margin-top: 40px;
+            li{
+                @include fs(#777,16px,400);
+                line-height: 26px;
+                padding-left: 70px;
+                margin-bottom: 15px;
+                position: relative;
+                i{
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    color: #fff;
+                    text-align: center;
+                    background: #777;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+/*=========================================================
+                    Benifits css end
+=========================================================*/

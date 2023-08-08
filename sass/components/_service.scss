@@ -1,0 +1,77 @@
+@import '../mixins/mixins';
+@import '../variables/variable';
+
+/*=========================================================
+                    Service css Start
+=========================================================*/
+#service{
+    padding: 100px 0;
+    background: #EDEDED;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+
+    .service_row{
+        margin-top: 50px;
+        .service_item{
+            margin-bottom: 24px;
+            &:hover{
+                .image{
+                    img{
+                        transform: scale(1.04);
+                    }
+                }
+                .text{
+                    img{
+                        right: 15px;
+                    }
+                }
+            }
+            .image{
+                position: relative;
+                height: 200px;
+                overflow: hidden;
+                &::after{
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.4);
+                }
+                img{
+                    width: 100%;
+                    max-width: 100%;
+                    height: 100%;
+                    transition: all linear .3s;
+                }
+                h5{
+                    position: absolute;
+                    left: 30px;
+                    bottom: 30px;
+                    @include fs(#fff,25px,600);
+                    z-index: 1;
+                }
+            }
+            .text{
+                width: 100%;
+                padding: 40px 90px 40px 25px;
+                background: #fff;
+                position: relative;
+                p{
+                    @include fs(#777,14px,400);
+                    line-height: 26px;
+                }
+                img{
+                    position: absolute;
+                    top: 50%;
+                    right: 25px;
+                    transform: translateY(-50%);
+                    transition: all linear .3s;
+                }
+            }
+        }
+    }
+}
+/*=========================================================
+                    Service css end
+=========================================================*/

@@ -1,0 +1,98 @@
+@import '../mixins/mixins';
+@import '../variables/variable';
+
+/*=========================================================
+                    Contact css Start
+=========================================================*/
+#contact{
+    padding: 100px 0;
+    background: linear-gradient(to right, #212529 70%, #e25f3e 40%);
+    position: relative;
+
+    .contact_left{
+        h6{
+            @include fs($c1,17px,500);
+            position: relative;
+            display: inline;
+            &::after{
+                position: absolute;
+                content: '';
+                bottom: 5px;
+                left: 0;
+                width: 100%;
+                height: 5px;
+                background: rgba(240, 76, 35, 0.4);
+            }
+        }
+        h2{
+            @include fs(#fff,35px,500);
+            margin-top: 20px;
+        }
+        p{
+            @include fs(#777,16px,400);
+            margin-top: 30px;
+        }
+        .input_area{
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            input{
+                width: 100%;
+                border: none;
+                margin-bottom: 25px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                border-bottom: 1px solid #777;
+                background: transparent;
+                @include fs(#fff,14px,400);
+            }
+            textarea{
+                width: 100%;
+                background: transparent;
+                border: none;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                border-bottom: 1px solid #777;
+                @include fs(#fff,14px,400);
+            }
+        }
+        .com_btn{
+            margin-top: 30px;
+        }
+    }
+    .contact_right{
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        transform: translateY(-50%);
+        animation: tb 10s infinite;
+        h2{
+            background-image: url(../../images/text-background.jpg);
+            background-repeat: repeat;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 70px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 700;
+            -webkit-font-smoothing: antialiased;
+        }
+    }
+    @keyframes tb {
+        0%{
+            right: 2%;
+        }
+        25%{
+            right: 5%;
+        }
+        50%{
+            right: 8%;
+        }
+        100%{
+            right: 2%;
+        }
+    }
+}
+/*=========================================================
+                    Contact css end
+=========================================================*/

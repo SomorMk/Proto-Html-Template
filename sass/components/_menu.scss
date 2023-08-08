@@ -1,0 +1,39 @@
+@import '../mixins/mixins';
+@import '../variables/variable';
+
+/*=========================================================
+                    Menu css Start
+=========================================================*/
+.navbar{
+    padding: 30px 0;
+    background: #fff !important;
+
+    #navbarSupportedContent{
+        .navbar-nav{
+            .nav-item{
+                margin-left: 20px;
+                .nav-link{
+                    @include fs($b,16px,500);
+                    &.active{
+                        color: $c1;
+                    }
+                }
+                &:last-child{
+                    .nav-link{
+                        padding: 10px 20px;
+                        background: $b;
+                        color: #fff;
+                        box-shadow: 5px 5px 0 $c1;
+                        transition: all linear .3s;
+                        &:hover{
+                            box-shadow: 0 0 0 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*=========================================================
+                    Menu css end
+=========================================================*/
